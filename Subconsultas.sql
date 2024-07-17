@@ -10,6 +10,7 @@ inner join Orders o on od.OrderID=o.OrderID
 inner join Customers c on o.CustomerID=c.CustomerID
 where c.CustomerID in (select CustomerID from Customers where City='London');
 
+
 select distinct s.CompanyName
 from Suppliers s
 inner join Products p on s.SupplierID=p.SupplierID
