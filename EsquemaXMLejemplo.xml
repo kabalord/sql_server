@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='Estudiante'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Nombre" type="xs:string"/>
+				<xs:element name="Direccion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Pais" type="xs:string"/>
+							<xs:element name="Departamento" type="xs:string"/>
+							<xs:element name="Ciudad" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>	
+				</xs:element>
+				<xs:element name="Telefono" type="xs:int"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
